@@ -19,39 +19,39 @@ const sidebars: SidebarsConfig = {
             ],
             collapsed: true
         },
-        {
-            type: 'category',
-            label: 'Documentation',
-            items: [
-                {
-                    type: 'category',
-                    link: {
-                        type: 'doc',
-                        id: 'Documentation/api-core/index'
-                    },
-                    label: '@vortexus.js/core',
-                    items: require('./docs/Documentation/api-core/typedoc-sidebar.cjs')
-                },
-                {
-                    type: 'category',
-                    link: {
-                        type: 'doc',
-                        id: 'Documentation/api-utility/index'
-                    },
-                    label: '@vortexus.js/utility',
-                    items: require('./docs/Documentation/api-utility/typedoc-sidebar.cjs')
-                },
-                {
-                    type: 'category',
-                    link: {
-                        type: 'doc',
-                        id: 'Documentation/api-vortexus.js/index'
-                    },
-                    label: 'vortexus.js',
-                    items: require('./docs/Documentation/api-vortexus.js/typedoc-sidebar.cjs')
-                }
-            ]
-        }
+        // {
+        //     type: 'category',
+        //     label: 'Documentation',
+        //     items: [
+        //         {
+        //             type: 'category',
+        //             link: {
+        //                 type: 'doc',
+        //                 id: 'Documentation/api-core/index'
+        //             },
+        //             label: '@vortexus.js/core',
+        //             items: require('./docs/Documentation/api-core/typedoc-sidebar.cjs')
+        //         },
+        //         {
+        //             type: 'category',
+        //             link: {
+        //                 type: 'doc',
+        //                 id: 'Documentation/api-utility/index'
+        //             },
+        //             label: '@vortexus.js/utility',
+        //             items: require('./docs/Documentation/api-utility/typedoc-sidebar.cjs')
+        //         },
+        //         {
+        //             type: 'category',
+        //             link: {
+        //                 type: 'doc',
+        //                 id: 'Documentation/api-vortexus.js/index'
+        //             },
+        //             label: 'vortexus.js',
+        //             items: require('./docs/Documentation/api-vortexus.js/typedoc-sidebar.cjs')
+        //         }
+        //     ]
+        // }
     ]
 }
 

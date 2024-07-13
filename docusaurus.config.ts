@@ -52,44 +52,44 @@ const config: Config = {
         }
     ],
 
-    plugins: [
-        [
-            "docusaurus-plugin-typedoc",
-            {
-                ...baseTypedocOptions,
-                id: 'core',
-                entryPoints: ["./submodules/vortexus.js/packages/core/src/index.ts"],
-                tsconfig: './submodules/vortexus.js/packages/core/tsconfig.json',
-                readme: './submodules/vortexus.js/packages/core/README.md',
-                out: './docs/Documentation/api-core',
-                plugin: ['typedoc-plugin-mdn-links', 'typedoc-plugin-djs-links']
-            }
-        ],
-        [
-            "docusaurus-plugin-typedoc",
-            {
-                ...baseTypedocOptions,
-                id: 'utility',
-                entryPoints: ["./submodules/vortexus.js/packages/utility/src/index.ts"],
-                tsconfig: './submodules/vortexus.js/packages/utility/tsconfig.json',
-                readme: './submodules/vortexus.js/packages/utility/README.md',
-                out: './docs/Documentation/api-utility',
-                plugin: ['typedoc-plugin-mdn-links', 'typedoc-plugin-djs-links']
-            }
-        ],
-        [
-            "docusaurus-plugin-typedoc",
-            {
-                ...baseTypedocOptions,
-                id: 'vortexus.js',
-                entryPoints: ["./submodules/vortexus.js/packages/vortexus.js/src/index.ts"],
-                tsconfig: './submodules/vortexus.js/packages/vortexus.js/tsconfig.json',
-                readme: './submodules/vortexus.js/packages/vortexus.js/README.md',
-                out: './docs/Documentation/api-vortexus.js',
-                plugin: ['typedoc-plugin-mdn-links', 'typedoc-plugin-djs-links']
-            }
-        ],
-    ],
+    // plugins: [
+    //     [
+    //         "docusaurus-plugin-typedoc",
+    //         {
+    //             ...baseTypedocOptions,
+    //             id: 'core',
+    //             entryPoints: ["./submodules/vortexus.js/packages/core/src/index.ts"],
+    //             tsconfig: './submodules/vortexus.js/packages/core/tsconfig.json',
+    //             readme: './submodules/vortexus.js/packages/core/README.md',
+    //             out: './docs/Documentation/api-core',
+    //             plugin: ['typedoc-plugin-mdn-links', 'typedoc-plugin-djs-links']
+    //         }
+    //     ],
+    //     [
+    //         "docusaurus-plugin-typedoc",
+    //         {
+    //             ...baseTypedocOptions,
+    //             id: 'utility',
+    //             entryPoints: ["./submodules/vortexus.js/packages/utility/src/index.ts"],
+    //             tsconfig: './submodules/vortexus.js/packages/utility/tsconfig.json',
+    //             readme: './submodules/vortexus.js/packages/utility/README.md',
+    //             out: './docs/Documentation/api-utility',
+    //             plugin: ['typedoc-plugin-mdn-links', 'typedoc-plugin-djs-links']
+    //         }
+    //     ],
+    //     [
+    //         "docusaurus-plugin-typedoc",
+    //         {
+    //             ...baseTypedocOptions,
+    //             id: 'vortexus.js',
+    //             entryPoints: ["./submodules/vortexus.js/packages/vortexus.js/src/index.ts"],
+    //             tsconfig: './submodules/vortexus.js/packages/vortexus.js/tsconfig.json',
+    //             readme: './submodules/vortexus.js/packages/vortexus.js/README.md',
+    //             out: './docs/Documentation/api-vortexus.js',
+    //             plugin: ['typedoc-plugin-mdn-links', 'typedoc-plugin-djs-links']
+    //         }
+    //     ],
+    // ],
 
 	presets: [
 		[
@@ -159,19 +159,19 @@ const config: Config = {
 							label: 'Guide',
 							to: '/docs/Guide/Home/Introduction',
 						},
-                        {
-                            label: 'vortexus.js',
-                            to: '/docs/Documentation/api-vortexus.js'
-                        },
-                        {
-                            label: '@vortexus.js/core',
-                            to: '/docs/Documentation/api-core'
-                        },
-                        {
-                            label: '@vortexus.js/utility',
-                            to: '/docs/Documentation/api-utility',
+                        // {
+                        //     label: 'vortexus.js',
+                        //     to: '/docs/Documentation/api-vortexus.js'
+                        // },
+                        // {
+                        //     label: '@vortexus.js/core',
+                        //     to: '/docs/Documentation/api-core'
+                        // },
+                        // {
+                        //     label: '@vortexus.js/utility',
+                        //     to: '/docs/Documentation/api-utility',
                             
-                        },
+                        // },
 					],
 				},
 				{
