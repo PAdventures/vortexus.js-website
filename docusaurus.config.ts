@@ -58,9 +58,9 @@ const config: Config = {
             {
                 ...baseTypedocOptions,
                 id: 'core',
-                entryPoints: ["../packages/core/src/index.ts"],
-                tsconfig: '../packages/core/tsconfig.json',
-                readme: '../packages/core/README.md',
+                entryPoints: ["./submodules/vortexus.js/packages/core/src/index.ts"],
+                tsconfig: './submodules/vortexus.js/packages/core/tsconfig.json',
+                readme: './submodules/vortexus.js/packages/core/README.md',
                 out: './docs/Documentation/api-core',
                 plugin: ['typedoc-plugin-mdn-links', 'typedoc-plugin-djs-links']
             }
@@ -70,9 +70,9 @@ const config: Config = {
             {
                 ...baseTypedocOptions,
                 id: 'utility',
-                entryPoints: ["../packages/utility/src/index.ts"],
-                tsconfig: '../packages/utility/tsconfig.json',
-                readme: '../packages/utility/README.md',
+                entryPoints: ["./submodules/vortexus.js/packages/utility/src/index.ts"],
+                tsconfig: './submodules/vortexus.js/packages/utility/tsconfig.json',
+                readme: './submodules/vortexus.js/packages/utility/README.md',
                 out: './docs/Documentation/api-utility',
                 plugin: ['typedoc-plugin-mdn-links', 'typedoc-plugin-djs-links']
             }
@@ -82,9 +82,9 @@ const config: Config = {
             {
                 ...baseTypedocOptions,
                 id: 'vortexus.js',
-                entryPoints: ["../packages/vortexus.js/src/index.ts"],
-                tsconfig: '../packages/vortexus.js/tsconfig.json',
-                readme: '../packages/vortexus.js/README.md',
+                entryPoints: ["./submodules/vortexus.js/packages/vortexus.js/src/index.ts"],
+                tsconfig: './submodules/vortexus.js/packages/vortexus.js/tsconfig.json',
+                readme: './submodules/vortexus.js/packages/vortexus.js/README.md',
                 out: './docs/Documentation/api-vortexus.js',
                 plugin: ['typedoc-plugin-mdn-links', 'typedoc-plugin-djs-links']
             }
@@ -100,7 +100,7 @@ const config: Config = {
                     remarkPlugins: [convertNpmToPackageManagers, ts2esm2cjs],
                     showLastUpdateTime: true,
                     showLastUpdateAuthor: true,
-					editUrl: 'https://github.com/PAdventures/Vortexus.js/edit/website/website',
+					editUrl: 'https://github.com/PAdventures/vortexus.js-website/edit/main/',
 				},
 				blog: false,
 				theme: {
