@@ -116,7 +116,7 @@ const config: Config = {
             maxHeadingLevel: 4
         },
         announcementBar: {
-            content: "⚠️ Vortexus.js is currently being developed. Everything on this website is subject to be changed frequently ⚠️",
+            content: "⚠️ This is the Vortexus.js PREVIEW website. All new experiments are tested here. Everything is subject to change ⚠️",
             isCloseable: false,
             backgroundColor: "#ff0000",
             textColor: "#fff"
