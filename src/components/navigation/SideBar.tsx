@@ -28,7 +28,7 @@ export default function SideBar() {
                 },
                 {
                     title: "What's New",
-                    href: "/docs/guide/home/what%27s-new"
+                    href: "/docs/guide/home/what-s-new"
                 },
             ],
         },

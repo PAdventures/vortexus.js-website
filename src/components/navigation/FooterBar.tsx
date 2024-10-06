@@ -15,11 +15,11 @@ export default function FooterBar() {
             setCommitInfo(await getCommitInfo(pathname))
         }
         
-        // if (process.env.NODE_ENV === "production") {
+        if (process.env.NODE_ENV === "production") {
             updateCommitInfo()
-        // } else {
-        //     setCommitInfo({ lastUpdated: (new Date(Date.now())).toISOString(), committer: "PAdventures" })
-        // }
+        } else {
+            setCommitInfo({ lastUpdated: (new Date(Date.now())).toISOString(), committer: "PAdventures" })
+        }
     }, [pathname])
 
 	return (
