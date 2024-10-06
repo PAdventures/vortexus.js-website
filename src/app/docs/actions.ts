@@ -8,7 +8,7 @@ export type CommitInfo = {
 export async function getCommitInfo(pathname: string | null): Promise<CommitInfo | null> {
 	const repoOwner = 'PAdventures';
 	const repoName = 'vortexus.js-website';
-	const filePath = `src${pathname}/page.tsx`
+	const filePath = `src/app${pathname}/page.tsx`
 
     if (!pathname) {
         return null;
