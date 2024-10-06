@@ -15,7 +15,7 @@ export async function getCommitInfo(pathname: string | null): Promise<CommitInfo
     }
 
 	const response = await fetch(
-		`https://api.github.com/repos/${repoOwner}/${repoName}/commits?path=${filePath}`,
+		`https://api.github.com/repos/${repoOwner}/${repoName}/commits` + new URLSearchParams({ path: filePath }),
 		{
 			headers: {
 				Accept: 'application/vnd.github+json',
@@ -26,6 +26,8 @@ export async function getCommitInfo(pathname: string | null): Promise<CommitInfo
             }
 		},
 	);
+
+    console.log(response.url)
 
 	const commits = await response.json();
 

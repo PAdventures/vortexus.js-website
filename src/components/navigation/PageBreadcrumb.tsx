@@ -11,6 +11,8 @@ export default function PageBreadcrumb() {
     const pathname = usePathname();
     const paths = pathname.split(/(\/)/).filter(Boolean).slice(3);
 
+    const formatPath = (path: string) => (path.at(0)!.toUpperCase() + path.substring(1)).replaceAll("-s-", "'s ").replaceAll("-", " ")
+
     return (
         <Breadcrumb className="ml-4 w-full">
             <BreadcrumbList>
@@ -33,13 +35,13 @@ export default function PageBreadcrumb() {
                     if (index === paths.length - 1) {
                         return (
                             <BreadcrumbItem key={index}>
-                                <p className="rounded-full bg-muted px-3 py-2 text-primary-active">{(path.at(0)!.toUpperCase() + path.substring(1)).replaceAll("-", " ").replaceAll("%27", "'")}</p>
+                                <p className="rounded-full bg-muted px-3 py-2 text-primary-active">{formatPath(path)}</p>
                             </BreadcrumbItem>
                         )
                     }
                     return (
                         <BreadcrumbItem key={index}>
-                            <p className="px-3 py-2 text-foreground">{(path.at(0)!.toUpperCase() + path.substring(1)).replaceAll("-", " ").replaceAll("%27", "'").normalize()}</p>
+                            <p className="px-3 py-2 text-foreground">{formatPath(path)}</p>
                         </BreadcrumbItem>
                     )
                 })}
