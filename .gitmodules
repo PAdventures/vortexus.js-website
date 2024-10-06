@@ -1,0 +1,4 @@
+[submodule "vortexus.js-package"]
+    path = vortexus.js-package
+    url = https://github.com/PAdventures/Vortexus.js
+    branch = main
