@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 export default function ReadGuideButton() {
     const router = useRouter();
 
-    const redirect = () => router.push("/docs/guide/Getting-Started")
+    const redirect = () => router.push("/docs/guide/home/introduction")
 
 	return (
 		<Button
