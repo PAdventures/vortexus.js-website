@@ -133,8 +133,8 @@ export default function MenuBar() {
                         </div>
                         <div className="flex items-center justify-center space-x-4">
                             <NavigationMenuItem>
-                            <Link target="_blank" href="https://github.com/PAdventures/Vortexus.js" legacyBehavior passHref>
-                                    <NavigationMenuLink className="group/link flex h-9 w-max items-center justify-between rounded-md bg-muted/50 px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-accent-foreground focus:bg-muted focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
+                            <Link href="https://github.com/PAdventures/Vortexus.js" legacyBehavior passHref>
+                                    <NavigationMenuLink target="_blank" className="group/link flex h-9 w-max items-center justify-between rounded-md bg-muted/50 px-4 py-2 text-sm font-medium transition-colors hover:bg-muted hover:text-accent-foreground focus:bg-muted focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
                                         <p className="group-hover/link:text-primary-active">GitHub</p>
                                         <Spacer className="w-2" />
                                         <ExternalLinkIcon className="h-4 w-4 -translate-y-1 group-hover/link:stroke-primary-active group-hover/link:motion-safe:animate-bounce" />
